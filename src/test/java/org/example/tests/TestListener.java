@@ -1,14 +1,15 @@
-package org.example.Utilts;
+package org.example.tests;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import org.example.Utilts.ScreenshotUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.example.tests.BaseTest;
 
 
 public class TestListener extends BaseTest implements ITestListener {
-
+    ExtentTest test;
     @Override
     public void onTestFailure(ITestResult result) {
         Object currentClass = result.getInstance();

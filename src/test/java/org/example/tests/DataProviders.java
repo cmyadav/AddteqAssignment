@@ -1,5 +1,6 @@
-package org.example.Utilts;
+package org.example.tests;
 
+import org.example.Utilts.ExcelUtils;
 import org.testng.annotations.DataProvider;
 import java.io.IOException;
 
